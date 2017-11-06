@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Chivo:300,400&subset=latin-ext');
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size:14px;
+  color:#9099a0;
+  background: #252525;
+}
+::-webkit-input-placeholder  {
+  color: #9099a0;
+  opacity: 1 !important;
+}
+:-moz-placeholder {
+  color: #9099a0;
+  opacity: 1 !important;
+}
+::-moz-placeholder {
+  color: #9099a0;
+  opacity: 1 !important;
+}
+:-ms-input-placeholder {
+  color: #9099a0;
+}
+.white{
+  background: #fff;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Chivo', sans-serif;
+  font-weight: 400;
+  color: #4a4e51;
+}
+ul{
+  margin:0;
+  padding:0 0 0 20px;
+}
+p, ul li{
+  line-height: 30px;
+}
+.wrapper{
+  max-width:1200px;
+  margin:0 auto;
+}
+a {
+  color:#bfaf37;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+a:hover, .main-menu li.mslc a, .main-menu li a:hover{
+  color:#4a4e51;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #767676;
+  margin: 30px 0;
+  padding: 0;
+  width: 100%;
+  float: left;
+}
+.kontakt-info{
+  float: right;
+  padding-top: 5px;
+}
+.kontakt-info p{
+  margin: 0;
+}
+#kontakt-forma{
+  float: left;
+  margin-left: 0;
+  padding-right: 50px;
+}
+#kontakt-forma input, #kontakt-forma textarea{
+  width: 100%;
+  float: left;
+  padding:7px 10px;
+  margin-bottom: 10px;
+}
+.error {
+  background-image: url(../images/error.png);
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+  border: 1px dashed #e81500 !important;
+  padding: 15px;
+}
+.txt_error {
+  background-image: url(../images/error.png);
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+  border: 1px solid #e81500 !important;
+  padding: 15px;
+}
+.success {
+  background-image: url(../images/sucess-32.png);
+  background-position: left 15px center;
+  background-repeat: no-repeat;
+  border: 1px dashed #7ac143;
+  padding: 15px 15px 15px 65px;
+}
+.error_img {
+  background-image: url(../images/error-32.png);
+  background-position: left 15px center;
+  background-repeat: no-repeat;
+  border: 1px dashed #e81500;
+  padding: 15px 15px 15px 65px;
+}
+#kontakt-forma input.btn.send{
+  background: #bfaf37;
+  color: #fff;
+  border:none;
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding: 12px;
+}
+#kontakt-forma input.btn.send:hover {
+  background:#4a4e51;
+  color:#fff;
+  cursor:pointer;
+  border:none;
+}
+input[type="text"], textarea, button, input[type="file"] {
+  transition: none;
+}
+#kontakt-forma input[type="checkbox"] {
+  float: none;
+  width: auto;
+}
+#kontakt-forma input:focus, #kontakt-forma textarea:focus, #kontakt-forma input:hover, #kontakt-forma textarea:hover {
+  border-bottom:1px solid #bfaf37;
+}
+#kontakt-forma input, #kontakt-forma textarea{
+  border-bottom:1px solid #ccc;
+}
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+select::-ms-expand {
+  display: none;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+.footer{
+  width:100%;
+  padding:30px 0;
+  float:left;
+  background:#252525;
+  font-weight:400;
+  color: #666;
+}
+.none{
+  display:none;
+}
+.copy{
+  font-size:11px;
+  line-height: 11px;
+}
+.v{
+  float:right;
+}
+.row{
+  width:100%;
+  clear: both;
+  float:left;
+}
+.clearfix {
+  clear: both;
+  display: block;
+  width: 100%;
+}
+#toggle{
+  display: none;
+}
+/* Dokumenti */
+.docs-list{
+  float:left;
+  display: block;
+  width: 100%;
+}
+.docs-list ul{
+  list-style:none;
+  float:left;
+  width: 100%;
+  padding-left: 0;
+}
+.docs-list ul li{
+  background: url(../images/doc-icon.svg) no-repeat left center transparent;
+  background-size: 25px;
+  padding: 10px 0 10px 35px;
+  display: block;
+  font-weight: 400;
+  float: left;
+  margin-right: 40px;
+}
+.docs-list ul li a{
+  line-height: 18px;
+}
+/* End Dokumenti */
+/* Bread crumbs */
+.bread-crumbs{
+  margin-bottom: 80px;
+}
+.bread-crumbs ul{
+  list-style:none;
+  float:left;
+  padding-left: 0;
+}
+.bread-crumbs ul li{
+  float:left;
+  font-size: 12px;
+  line-height: 16px;
+}
+.bread-crumbs ul li:after{
+  content:"|";
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.bread-crumbs ul li:last-child:after{
+  content:"";
+  padding-left: 0;
+  padding-right: 0;
+}
+/* End Bread crumbs*/
+.content img{
+  max-width: 100%;
+  height: auto;
+}
+/* Cookie */
+.cookie-container {
+  background: rgba(0, 0, 0, 0.9);
+  bottom: 0;
+  display: block;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  color:#fff;
+}
+.cookie-container p{
+  margin: 0;
+  line-height: 16px;
+  font-size: 12px;
+}
+.cookie-container a:hover{
+  color: #fff;
+}
+/* end of cookie */
+.footer-top{
+  background: #ffeb55 url(../images/footer-bottom.png) no-repeat bottom center;
+  padding:80px 0 200px 0;
+  text-align: center;
+}
+.footer-top ul{
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+.footer-top ul li{
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 16px;
+  line-height: 16px;
+}
+.footer-top a, .footer-top ul li{
+  color: #3d3529;
+}
+.footer-top a:hover{
+  color: #000;
+}
+.footer-top h2, .home-white h2{
+  font-size: 24px;
+  line-height: 28px;
+  color:#3d3529;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+#map{
+  width: 100%;
+  height: 400px;
+  float: left;
+  margin-top: 85px;
+}
+.map-img a{
+  float: left;
+}
+.map-img{
+  margin-top: 85px;
+}
+.fw{
+  float: left;
+  width: 100%;
+}
+.home-white{
+  padding:80px 0 80px 0;
+  text-align: center;
+  background: #fff;
+}
+.footer-top-img{
+  background: #fff url(../images/footer-top.png) no-repeat bottom center;
+  height: 85px;
+}
+.gallery .col_4 img, .gallery .col_3 img{
+  width: 100%;
+  max-width: 360px;
+}
+.gallery .c-img, .nimg{
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 10px solid #f7f7f7;
+  -webkit-transition: border 0.4s ease 0s;
+  -o-transition: border 0.4s ease 0s;
+  transition: border 0.4s ease 0s;
+}
+.gallery .c-img:hover, .nimg:hover{
+  border: 10px solid #e9e9e9;
+}
+.gallery .col_4{
+  padding: 10px;
+}
+.gallery .col_4:nth-child(3n+4), .gallery .col_3:nth-child(4n+5){
+  margin-left: 0;
+}
+.home-white .gallery{
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.view-more{
+  font-size: 16px;
+  font-weight: 600;
+}
+.gallery a{
+  float: left;
+  display: block;
+  width: 100%;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: color 0.4s, background 0.4s;
+  -o-transition: color 0.4s, background 0.4s;
+  transition: color 0.4s, background 0.4s;
+  position: relative;
+  z-index: 1;
+}
+.gallery a::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255,255,255,0.2);
+  background-image: url(../images/zoom.svg);
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+}
+.gallery a:hover::after{
+  opacity: 1;
+}
+.onama{
+  background: #f3f3f3 url(../images/white-top.png) no-repeat bottom center;
+  padding:80px 0 165px 0;
+  text-align: center;
+}
+.onama-txt {
+  width: 1000px;
+  float: none;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  padding: 80px 0 0 240px;
+}
+.onama-txt img{
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  max-width:555px;
+  top: 0;
+  left: 0;
+}
+.big-img{
+  position: relative;
+  z-index: 1;
+}
+.bottom{
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+}
+.top{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+.big-img img{
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  z-index: -1;
+}
+.header{
+  background: #fff;
+  padding: 20px 0 0 0;
+}
+.logo, .izbornik, .odabir-jezika{
+  display: inline-block;
+  width: auto;
+}
+.logo {
+  float: left;
+}
+.logo img{
+  width: 100%;
+  max-width: 70px;
+}
+.izbornik, .odabir-jezika{
+  float: right;
+  margin-top: 25px;
+}
+.izbornik ul{
+  list-style: none;
+  padding: 0;
+  float: left;
+  width: 100%;
+}
+.izbornik ul li{
+  float: left;
+}
+.izbornik ul li{
+  background: url(../images/dot.svg) right center no-repeat transparent;
+  background-size: 6px;
+  padding-right: 21px;
+  margin-left: 18px;
+  font-size: 16px;
+  line-height: 16px;
+}
+.izbornik ul li:first-child{
+  margin-left: 0;
+}
+.izbornik ul li:last-child{
+  background: none;
+  padding-right: 0;
+}
+.izbornik ul li a{
+  color: #9099a0;
+}
+.odabir-jezika{
+  margin-left: 40px;
+  margin-top: 17px;
+}
+.list-inline {
+  float: right;
+  width: auto;
+  list-style: none;
+  padding: 0;
+}
+.lang-list{
+  float: left;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  margin: 0 1px;
+}
+.lang-list a{
+  color:#9099a0;
+  background: #fff;
+  width: 34px;
+  height: 34px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  float: left;
+  padding-top: 10px;
+}
+.lang-list a.slc, .lang-list a:hover{
+  color:#fff;
+  background: #f7c933;
+}
+.content{
+  padding: 150px 0 80px 0;
+}
+.content h1{
+  margin: 0 0 50px 0;
+  float: left;
+  display: block;
+  width: 100%;
+}
+.news-box{
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+  position: relative;
+  z-index: 1;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.news-box .nimg{
+  float: left;
+  display: inline-block;
+  width: 30%;
+}
+.nimg img{
+  width: 100%;
+  max-width: 360px;
+}
+.news-box .ntxt{
+  display: inline-block;
+  width: 70%;
+  padding-left: 50px;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  float: right;
+}
+.news-box .ntxt h2{
+  margin-top: 0;
+}
+.news-box:nth-child(2n) .nimg {
+  float: right;
+}
+.news-box:nth-child(2n) .ntxt {
+  left: 0;
+  padding-right: 50px;
+  padding-left: 0;
+}
+.gal-thumbs-hide {
+  display: none;
+}
+.ghidden {
+  float: right;
+  display: inline-block;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+.content .c-img img{
+  width: 100%;
+  max-width: 400px;
+}
+.tab-holder{
+  margin-top: 50px;
+}
+.tab-link{
+  padding: 15px 55px 15px 20px;
+  background: #f3f3f3 url(../images/tclose.svg) no-repeat right 20px center;
+  background-size: 15px;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  display: block;
+  margin: 2px 0;
+  color: #4a4e51;
+  text-align: center;
+}
+.tab-link:hover, .tab-link.aktivni{
+  color: #fff;
+  background: #bfaf37;
+}
+.tab-link, .tabs-container{
+  float: left;
+  width: 100%;
+}
+.tabs-container{
+  padding: 10px;
+  display: none;
+}
+.video-holder{
+  float: left;
+  width: 49.2%;
+  display: inline-block;
+  margin-left: 1.6%;
+}
+.video-holder:first-child{
+  margin-left: 0;
+}
+.video-page{
+  height: 0;
+  padding-bottom: 55%;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  display: inline-block;
+}
+.video-page iframe{
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+
+/*123*/
+/* POČETAK RESPONSIVE */
+@media screen and (-webkit-min-device-pixel-ratio:0) {}
+@media only screen and (max-width: 1680px) {}
+@media only screen and (max-width: 1600px) {}
+@media only screen and (max-width: 1440px) {}
+@media only screen and (max-width: 1366px) {}
+@media only screen and (max-width: 1360px) {}
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1220px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 980px) {}
+@media only screen and (max-width: 900px) {}
+@media only screen and (max-width: 800px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 640px) {}
+@media only screen and (max-width: 620px) {}
+@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 360px) {}
