@@ -154,7 +154,8 @@ button:focus {
   float:left;
   background:#252525;
   font-weight:400;
-  color: #666;
+  color: #3a3829;
+  text-align: center;
 }
 .none{
   display:none;
@@ -162,9 +163,6 @@ button:focus {
 .copy{
   font-size:11px;
   line-height: 11px;
-}
-.v{
-  float:right;
 }
 .row{
   width:100%;
